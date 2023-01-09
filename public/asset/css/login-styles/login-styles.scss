@@ -1,0 +1,874 @@
+:root {
+    --inner--bg--side: rgb(11, 13, 88);
+    ---google--inner--bg: #DB4437;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.side__login__no--wrap {
+    position: relative;
+    z-index: 9999;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: url('/asset/vector/bg.png') no-repeat;
+    overflow: hidden;
+}
+
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 88%;
+    width: 113px;
+    height: 113px;
+    bottom: -113px;
+    animation-delay: 1s;
+}
+
+.background li:nth-child(1) {
+    left: 47%;
+    width: 134px;
+    height: 134px;
+    bottom: -134px;
+    animation-delay: 4s;
+}
+
+.background li:nth-child(2) {
+    left: 46%;
+    width: 170px;
+    height: 170px;
+    bottom: -170px;
+    animation-delay: 1s;
+}
+
+.background li:nth-child(3) {
+    left: 72%;
+    width: 157px;
+    height: 157px;
+    bottom: -157px;
+    animation-delay: 14s;
+}
+
+.background li:nth-child(4) {
+    left: 40%;
+    width: 186px;
+    height: 186px;
+    bottom: -186px;
+    animation-delay: 11s;
+}
+
+.background li:nth-child(5) {
+    left: 12%;
+    width: 194px;
+    height: 194px;
+    bottom: -194px;
+    animation-delay: 21s;
+}
+
+.background li:nth-child(6) {
+    left: 10%;
+    width: 118px;
+    height: 118px;
+    bottom: -118px;
+    animation-delay: 1s;
+}
+
+.background li:nth-child(7) {
+    left: 40%;
+    width: 193px;
+    height: 193px;
+    bottom: -193px;
+    animation-delay: 10s;
+}
+
+.background li:nth-child(8) {
+    left: 18%;
+    width: 137px;
+    height: 137px;
+    bottom: -137px;
+    animation-delay: 30s;
+}
+
+.background li:nth-child(9) {
+    left: 86%;
+    width: 101px;
+    height: 101px;
+    bottom: -101px;
+    animation-delay: 13s;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.login__container {
+    overflow: hidden;
+}
+
+.login__form__wrapper {
+    font-family: 'Author', sans-serif;
+
+    p {
+        line-height: 2em;
+    }
+}
+
+.login__label__name {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.password__in {
+    margin-top: 1.2em;
+}
+
+.submit__btn {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    .btn__submit {
+        background-color: #fff;
+        width: 150px;
+    }
+
+    .btn__submit:hover {
+        background-color: rgb(223, 223, 223);
+        color: rgb(39, 38, 38);
+    }
+}
+
+.form__login {
+    .form-control {
+        overflow: hidden;
+        border-radius: 0;
+        background-color: transparent;
+        border: none;
+        color: rgb(187, 187, 187);
+        border-bottom: 1px solid #fff;
+        padding: 1em 0;
+        transition: .31s ease-in-out;
+    }
+
+    .form-control:focus,
+    .form-control:active .form-control:hover {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        border-bottom: 1px solid #fff;
+        transition: .31s ease-in-out;
+    }
+
+    .form-control input {
+        caret-color: transparent;
+    }
+}
+
+.side__login__no--wrap {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.google__form {
+    display: flex;
+    flex-direction: column;
+    color: rgb(170, 170, 170);
+
+    span {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .btn__google {
+        margin: auto;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        background-color: var(---google--inner--bg);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .25s ease-in-out;
+
+        &:hover {
+            background-color: #9e3228;
+        }
+    }
+}
+
+.copy__ {
+    color: rgb(92, 91, 91);
+    font-family: 'Author', sans-serif;
+    position: absolute;
+    padding-left: 2em;
+    font-size: 14px;
+    bottom: 0;
+    z-index: 999;
+
+    p {
+        span a {
+            font-weight: 600;
+            text-decoration: none;
+            color: rgb(122, 122, 122);
+        }
+    }
+}
+
+.login__logo img {
+    justify-content: center;
+    margin: auto;
+}
+
+// Mobile
+@media screen and (min-width:0px) and (max-width:320px) {
+    .side__content__login--no-wrap {
+        display: none;
+    }
+
+    .flex {
+        flex-direction: column;
+        min-height: 100vh;
+
+        .side__login__no--wrap {
+            background-color: var(--inner--bg--side);
+            // width: 50%;
+            display: block;
+            height: 100vh;
+
+            .side__login__content {
+                margin: 3em 0 !important;
+                padding: 0 2em !important;
+
+                .login__logo {
+                    img {
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                        height: 50px;
+                        display: block;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            .login__form__wrapper {
+                margin-top: 1em !important;
+
+                h1 {
+                    font-size: 30px;
+
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #fff;
+                    padding: 2em 0 !important;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .form__login {
+        .form-control {
+            border-bottom: 1px solid #fff;
+            width: 16rem;
+        }
+
+        .btn__daftar {
+            margin-top: 30px;
+            background-color: transparent;
+            border: none;
+            color: rgb(248, 132, 132);
+            transition: all .35s ease-in-out;
+            font-size: 14px;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .google__form {
+        margin-top: 1em;
+
+        .btn__google {
+            margin-top: 20px;
+            width: 200px;
+        }
+    }
+
+    .copy__ {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:321px) and (max-width:375px) {
+    .side__content__login--no-wrap {
+        display: none;
+    }
+
+    .flex {
+        flex-direction: column;
+        min-height: 100vh;
+
+        .side__login__no--wrap {
+            background-color: var(--inner--bg--side);
+            display: block;
+            height: 100vh;
+
+            .side__login__content {
+                margin: 2em 0 !important;
+                padding: 0 2em !important;
+
+                .login__logo {
+                    img {
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                        height: 50px;
+                        display: block;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            .login__form__wrapper {
+                padding: 1.5em 0 !important;
+
+                h1 {
+                    font-size: 30px;
+
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #fff;
+                    padding: 2em 0 !important;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .form__login {
+        .form-control {
+            border-bottom: 1px solid #fff;
+        }
+
+        .submit__btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .btn__daftar {
+            background-color: transparent;
+            border: none;
+            color: rgb(248, 132, 132);
+            transition: all .35s ease-in-out;
+            font-size: 13px;
+
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .google__form {
+        margin: 3em 0;
+
+        .btn__google {
+            margin-top: 20px;
+            width: 200px;
+        }
+    }
+
+    .copy__ {
+        display: none;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:480px) {
+    .side__content__login--no-wrap {
+        display: none;
+    }
+
+    .flex {
+        flex-direction: column;
+        min-height: 100vh;
+
+        .side__login__no--wrap {
+            background-color: var(--inner--bg--side);
+            // max-width: 200px;
+            display: block;
+            height: 100vh;
+
+            .side__login__content {
+                margin: 3em 0 !important;
+                padding: 0 3em !important;
+
+                .login__logo {
+                    img {
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                        height: 50px;
+                        display: block;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            .login__form__wrapper {
+                padding: 3em 0 !important;
+
+                h1 {
+                    font-size: 30px;
+
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #fff;
+                    padding: 2em 0 !important;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .form__login {
+        .form-control {
+            border-bottom: 1px solid #fff;
+            width: 330px;
+        }
+
+        .submit__btn {
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .btn__daftar {
+            background-color: transparent;
+            border: none;
+            color: rgb(248, 132, 132);
+            transition: all .35s ease-in-out;
+            font-size: 14px;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .google__form {
+        margin-top: 1em;
+
+        .btn__google {
+            margin-top: 20px;
+            width: 200px;
+        }
+    }
+
+    .copy__ {
+        display: none;
+    }
+}
+
+// Mobile
+
+// Tablet
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .flex {
+        flex-direction: row;
+        min-height: 100vh;
+
+        .side__content__login--no-wrap {
+            display: none;
+        }
+
+        .side__login__no--wrap {
+            background-color: var(--inner--bg--side);
+            display: block;
+            height: 100vh;
+
+            .side__login__content {
+                margin: 3em 0 !important;
+                padding: 0 12em !important;
+
+                .login__logo {
+                    img {
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                        height: 50px;
+                        display: block;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            .login__form__wrapper {
+                margin-top: 3em !important;
+                margin-bottom: 2em !important;
+
+                h1 {
+                    font-size: 30px;
+
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #fff;
+                    padding: 2em 0 !important;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .form__login {
+        .form-control {
+            border-bottom: 1px solid #fff;
+            width: 380px;
+        }
+
+        .submit__btn {
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .btn__daftar {
+            background-color: transparent;
+            border: none;
+            color: rgb(248, 132, 132);
+            transition: all .35s ease-in-out;
+            font-size: 14px;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .google__form {
+        margin-top: 2em;
+
+        .btn__google {
+            margin-top: 20px;
+            width: 287px;
+        }
+    }
+}
+
+// Tablet
+
+// Laptop
+@media screen and (min-width:769px) and (max-width: 1023px) {
+    .flex {
+        flex-direction: row;
+        min-height: 100vh;
+
+        .side__login__no--wrap {
+            background-color: var(--inner--bg--side);
+            max-width: 500px;
+            display: block;
+            height: 100vh;
+
+            .side__login__content {
+                margin: 3em 0 !important;
+                padding: 0 5em !important;
+
+                .login__logo {
+                    img {
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                        height: 50px;
+                        display: block;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            .login__form__wrapper {
+                padding: 1em 0 !important;
+
+                h1 {
+                    font-size: 30px;
+
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #fff;
+                    padding: 2em 0 !important;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .form__login {
+        .form-control {
+            border-bottom: 1px solid #fff;
+            width: 340px;
+        }
+
+        .submit__btn {
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .btn__daftar {
+            background-color: transparent;
+            border: none;
+            color: rgb(248, 132, 132);
+            transition: all .35s ease-in-out;
+            font-size: 14px;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .google__form {
+        margin-top: 2em;
+
+        .btn__google {
+            margin-top: 20px;
+            width: 287px;
+        }
+    }
+}
+
+// Laptop
+
+// Desktop
+@media screen and (min-width:1024px) and (max-width: 1200px) {
+    .flex {
+        flex-direction: row;
+        min-height: 100vh;
+        position: relative;
+
+        .side__login__no--wrap {
+            background-color: var(--inner--bg--side);
+            max-width: 500px;
+            display: block;
+            height: 100vh;
+            top: 2%;
+            position: relative;
+            transition: .35s ease-in-out;
+
+            .side__login__content {
+                margin: 3em 0 !important;
+                padding: 0 5em !important;
+
+
+                .login__logo {
+                    img {
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                        height: 50px;
+                        display: block;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            .login__form__wrapper {
+                padding: 1em 0 !important;
+
+                h1 {
+                    font-size: 30px;
+
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #fff;
+                    padding: 2em 0 !important;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .form__login {
+        .form-control {
+            border-bottom: 1px solid #fff;
+            width: 340px;
+        }
+
+        .submit__btn {
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .btn__daftar {
+            background-color: transparent;
+            border: none;
+            color: rgb(248, 132, 132);
+            transition: all .35s ease-in-out;
+            font-size: 14px;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .google__form {
+        margin-top: 2em;
+
+        .btn__google {
+            margin-top: 20px;
+            width: 287px;
+        }
+    }
+}
+
+// Desktop
+// Extra Large
+@media (min-width:1201px) {
+    .flex {
+        flex-direction: row;
+        min-height: 100vh;
+
+        .side__login__no--wrap {
+            background-color: var(--inner--bg--side);
+            max-width: 700px;
+            display: block;
+            height: 100vh;
+
+            .side__login__content {
+                margin: 1em 0 !important;
+                padding: 0 4em !important;
+                top: 4%;
+                position: relative;
+                transition: .35s ease-in-out;
+
+                .login__logo {
+                    img {
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                        height: 50px;
+                        display: block;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            .login__form__wrapper {
+                padding: 1em 0 !important;
+
+                h1 {
+                    font-size: 30px;
+
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #fff;
+                    padding: 2em 0 !important;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .form__login {
+        .form-control {
+            border-bottom: 1px solid #fff;
+            width: 480px;
+        }
+
+        .submit__btn {
+            justify-content: space-between;
+            display: flex;
+            max-width: 481px;
+        }
+
+        .btn__daftar {
+            background-color: transparent;
+            border: none;
+            color: rgb(248, 132, 132);
+            transition: all .35s ease-in-out;
+            font-size: 14px;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .google__form {
+        margin: 3em 0;
+        max-width: 481px;
+        a{
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn__google {
+            margin-top: 20px;
+            width: 287px;
+            display: block;
+        }
+    }
+
+}
+
+// End Extra Large
