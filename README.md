@@ -1,7 +1,7 @@
 <p align="center"><a href="https://bagian-portfolio.vercel.app" target="_blank"><img src="https://user-images.githubusercontent.com/45790050/211333377-00715dd1-4790-4296-8c5c-6138865f3038.png" width="100"></a></p>
 
 ## Intro
-This projects can analys for air quality by using a devices and can transform it into Data realtime on Dashboard view. 
+This projects can analyst for air quality by using a devices and can transform it into Data realtime on Dashboard view. 
 
 ## How To Install
 
