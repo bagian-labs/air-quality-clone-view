@@ -20,10 +20,3 @@ This projects can analys for air quality by using a devices and can transform it
 ```bash
     npm install //for installing component dependencies
 ```
-
-### Contributors
-
-- [Gilang Ramadhan](https://github.com/9Alpha9)
-- [Irham Rizaldy](https://github.com/irhamrizaldy)
-- [Aprilandi](https://github.com/Aprilandi)
-- [Adam Azka](https://github.com/adamazka)
