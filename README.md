@@ -18,7 +18,7 @@ This projects can analyst for air quality by using a devices and can transform i
     php composer install //for installing laravel projects
 ```
 ```bash
-    php composer install //for installing component
+    npm install //for installing component
 ```
 
 ## How to run like a desktop version
