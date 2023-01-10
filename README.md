@@ -30,3 +30,6 @@ This projects can analyst for air quality by using a devices and can transform i
     5. Open Air Quality-win32-x64.
     6. Choose Air Quality Application.
 ```
+
+## Download
+you can download desktop apps version here ([Download Here](https://www.dropbox.com/s/425c3r0ubxgke6v/air-quality__.zip?dl=0/ "Download Here")).
