@@ -17,3 +17,16 @@ This projects can analyst for air quality by using a devices and can transform i
 ```bash
     php composer install //for installing laravel projects
 ```
+```bash
+    php composer install //for installing component
+```
+
+## How to run like a desktop version
+```bash
+    1. Go to your projects. 
+    2. Open Xampp and start Apache & MySQL.
+    3. Open your projects with code editor.
+    4. Run 'php artisan serve'.
+    5. Open Air Quality-win32-x64.
+    6. Choose Air Quality Application.
+```
