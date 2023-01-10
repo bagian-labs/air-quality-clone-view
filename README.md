@@ -26,7 +26,7 @@ This projects can analyst for air quality by using a devices and can transform i
     1. Go to your projects. 
     2. Open Xampp and start Apache & MySQL.
     3. Open your projects with code editor.
-    4. Run 'php artisan serve' on the terminal or just open with shortcut (Ctrl + J) on Visual Studio Code.
+    4. Run 'php artisan serve' on the terminal or just open with shortcut (Ctrl + J) in Visual Studio Code.
     5. Open Air Quality-win32-x64.
     6. Choose Air Quality Application.
 ```
