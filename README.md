@@ -17,6 +17,3 @@ This projects can analyst for air quality by using a devices and can transform i
 ```bash
     php composer install //for installing laravel projects
 ```
-```bash
-    npm install //for installing component dependencies
-```
