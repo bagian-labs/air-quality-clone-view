@@ -33,3 +33,6 @@ This projects can analyst for air quality by using a devices and can transform i
 
 ## Download
 you can download desktop apps version here ([Download Here](https://www.dropbox.com/s/425c3r0ubxgke6v/air-quality__.zip?dl=0/ "Download Here")).
+> **Note**
+> 
+>extract the zip files and change name air-quality__ to air-quality and make sure you run xampp and php artisan in the same times.
