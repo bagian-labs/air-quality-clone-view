@@ -9,6 +9,7 @@ This projects can analyst for air quality by using a devices and can transform i
 - After install please download database reader or database maker like Xampp, Mamp, etc. You can install xampp ([Download Here](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.3.2/ "Download Here")). Please note : *install xampp 7.3 / 7.4 version for this projects !*
 - After that, please create a new Database set and name to (*air_quality*) and import it to Database.
 - Download composer ([Download Here](https://getcomposer.org/download/ "Download Here")).
+- Download Air Quality DATABASE ([Download Here](https://www.dropbox.com/s/lfzlmu0s6y1v2bo/air_quality.sql?dl=0))).
 
 # How to run it
 - This projects using Laravel frameworks, please read the documentation for more information [Laravel V8 Documentation](https://laravel.com/docs/8.x/installation)
